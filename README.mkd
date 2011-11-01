@@ -1,0 +1,41 @@
+# what the hell am I looking at?
+
+a shell based ... thigner... for editing rows in your dbic schema
+
+# why?
+
+'cause i've written this thing a couple of times (quite poorly) in a couple of my applications
+
+and on occasion i need to fiddle about with data because i wrote something so stupidly broken that it ruined everything...
+
+# what else?
+
+I haven't written it yet.
+
+# design?
+
+not really.
+
+i guess i'll want to do some of these things though:
+
+ - harass the schema for a list of "things" it has 
+
+ - harass the Results for a list of fields to set, and methods to call and a template to display them (or use overload) and some related things?...
+
+ - find a thing, and edit it, then either keep or discard the result of editing 
+
+ - maybe i could read form configs from catalyst applications so i can make use of some of the formfu/formbulder/formhandler declarations 
+
+ - allow for "tagging" of things in a schmea by a user 
+	- that is marking them as "interesting"
+		- a "user" is interesting, the table that joins it to groups is not
+		- a product is interesting, the individuals who ordered it are not (although they might be interesting in aggregate)
+	- stash these things 
+		- in the working copy, so others can use them?
+		- in your homedir so they work with different checkouts of the same schema?
+		- on ebay?
+ - allow for some simple (read bad) reports to be defined and stashed 
+	- reports being a pair of hashes for ->search and a format string 
+
+ - something for loading a user record based on the $[<()>]
+	- and then use it for filling in "audit tables" and things
